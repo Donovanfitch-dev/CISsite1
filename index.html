@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Industrial Solutions | Industrial HVAC Equipment Selection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--b5:#1B3A5C;--b6:#162F4A;--b7:#102337;--b8:#0B1825;--b2:#ADC3DF;--a5:#2A7DE1;--a6:#1E65B8;--s50:#F7F8F9;--s100:#EBEDF0;--s200:#D4D8DE;--s400:#8E99A7;--s500:#64707F;--s600:#4A5462;--s700:#353D48;--s800:#252B33;--w:#fff}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;color:var(--s800);background:var(--w);-webkit-font-smoothing:antialiased;line-height:1.6}
+h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;line-height:1.15}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;height:auto}
+::selection{background:var(--a5);color:#fff}
+.ctr{max-width:1152px;margin:0 auto;padding:0 24px}
+.ctr-sm{max-width:896px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+.hdr{position:sticky;top:0;z-index:50;background:var(--w);border-bottom:1px solid var(--s100)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:80px}
+.logo-a{display:flex;align-items:center;gap:12px}
+.logo-a img{height:48px;width:auto}
+.lt .l1{font-family:'Barlow Condensed',sans-serif;font-weight:800;color:var(--b5);font-size:18px;text-transform:uppercase;letter-spacing:.04em;display:block;line-height:1.2}
+.lt .l2{font-family:'Barlow Condensed',sans-serif;font-weight:600;color:var(--s500);font-size:13px;text-transform:uppercase;letter-spacing:.08em;display:block}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{padding:8px 16px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--s600);transition:color .2s}
+.nav a:hover{color:var(--b5)}
+.nav .btn-n{margin-left:12px;padding:10px 20px;background:var(--b5);color:#fff;font-weight:700;border-radius:4px}
+.nav .btn-n:hover{background:var(--b6)}
+
+/* BTNS */
+.btn{display:inline-block;padding:14px 32px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;border-radius:4px;transition:all .2s;cursor:pointer;border:none;font-family:'Barlow',sans-serif}
+.bp{background:var(--b5);color:#fff}.bp:hover{background:var(--b6)}
+.bo{border:2px solid var(--b5);color:var(--b5);background:transparent}.bo:hover{background:var(--b5);color:#fff}
+.bw{background:#fff;color:var(--b5)}.bw:hover{background:var(--s50)}
+.bow{border:2px solid #fff;color:#fff;background:transparent}.bow:hover{background:#fff;color:var(--b5)}
+.ba{background:var(--a5);color:#fff}.ba:hover{background:var(--a6)}
+
+/* HERO */
+.hero{background:var(--w);position:relative;overflow:hidden}
+.hero-g{position:absolute;inset:0;opacity:.02;background-image:repeating-linear-gradient(0deg,transparent,transparent 60px,var(--b5) 60px,var(--b5) 61px),repeating-linear-gradient(90deg,transparent,transparent 60px,var(--b5) 60px,var(--b5) 61px)}
+.hero-c{position:relative;padding:64px 0 80px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-c img{width:160px;margin-bottom:32px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);color:var(--b5);max-width:800px;font-weight:800}
+.hero p.sub{margin-top:24px;font-size:18px;color:var(--s500);max-width:640px;line-height:1.7}
+.hero-ctas{margin-top:40px;display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.hero-rep{margin-top:24px;font-size:14px;color:var(--s400)}
+.hero-line{height:4px;background:linear-gradient(90deg,var(--b5),var(--a5),var(--b5))}
+
+/* SECTIONS */
+.sec{padding:80px 0}
+.sec-g{background:var(--s50)}
+.sh{text-align:center;margin-bottom:48px}
+.sh .ey{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--a5);margin-bottom:12px}
+.sh h2{font-size:clamp(1.8rem,3.5vw,2.5rem);color:var(--b5);font-weight:800}
+.sh p{margin-top:16px;font-size:18px;color:var(--s500);max-width:640px;margin-left:auto;margin-right:auto;line-height:1.7}
+
+/* CARDS */
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.cd{background:#fff;border:1px solid var(--s100);border-radius:8px;padding:32px;transition:border-color .2s}
+.cd:hover{border-color:var(--a5)}
+.cd svg{color:var(--a5);margin-bottom:16px;width:32px;height:32px}
+.cd h3{font-size:1.15rem;color:var(--b5);margin-bottom:12px;font-weight:700}
+.cd p{font-size:15px;color:var(--s500);line-height:1.65}
+
+/* STEPS */
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+.st{text-align:center}
+.sn{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:var(--b5);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;margin-bottom:16px}
+.st h3{font-size:1.1rem;color:var(--b5);margin-bottom:8px}
+.st p{font-size:14px;color:var(--s500);line-height:1.6}
+
+/* TRUST */
+.tb{background:var(--b8);padding:48px 0}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;text-align:center}
+.tn{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.5rem;color:#fff}
+.tl{font-size:13px;color:var(--s400);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+
+/* CTA */
+.cta{background:var(--b5);position:relative;overflow:hidden;padding:64px 0;text-align:center}
+.cta::before{content:'';position:absolute;inset:0;opacity:.1;background-image:repeating-linear-gradient(90deg,transparent,transparent 40px,rgba(255,255,255,.05) 40px,rgba(255,255,255,.05) 41px)}
+.cta>*{position:relative}
+.cta h2{color:#fff;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:16px}
+.cta p{font-size:18px;color:var(--b2);max-width:560px;margin:0 auto 32px}
+.cta-b{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+
+/* PAGE HERO */
+.ph{background:var(--b5);position:relative;overflow:hidden;text-align:center;padding:80px 0 96px}
+.ph::before{content:'';position:absolute;inset:0;opacity:.1;background-image:repeating-linear-gradient(90deg,transparent,transparent 80px,rgba(255,255,255,.04) 80px,rgba(255,255,255,.04) 81px)}
+.ph>*{position:relative}
+.ph .ey{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--a5);margin-bottom:12px}
+.ph h1{color:#fff;font-size:clamp(2rem,4.5vw,3rem);font-weight:800}
+.ph p{margin-top:24px;font-size:18px;color:var(--b2);max-width:640px;margin-left:auto;margin-right:auto;line-height:1.7}
+
+/* ABOUT BIO */
+.bio .title-line{color:var(--a5);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin-bottom:32px}
+.bio p{color:var(--s600);font-size:16px;line-height:1.75;margin-bottom:20px}
+
+/* SERVICES DETAIL */
+.sb{margin-bottom:64px}
+.sb:last-child{margin-bottom:0}
+.sb-h{display:flex;align-items:flex-start;gap:16px;margin-bottom:32px}
+.sb-n{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--b5);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px}
+.sb-h h2{font-size:clamp(1.4rem,2.5vw,1.8rem);color:var(--b5);font-weight:800}
+.pao{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.pa{background:var(--s50);border-radius:8px;padding:24px;border-left:4px solid}
+.pa.pr{border-color:#ef4444}.pa.ap{border-color:var(--a5)}.pa.ou{border-color:#22c55e}
+.pa h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.pa.pr h3{color:#ef4444}.pa.ap h3{color:var(--a5)}.pa.ou h3{color:#16a34a}
+.pa p{font-size:15px;color:var(--s600);line-height:1.65}
+
+/* HIW DETAIL */
+.hw-s{display:flex;gap:24px;margin-bottom:64px;position:relative}
+.hw-s:last-child{margin-bottom:0}
+.hw-n{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:var(--b5);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;position:relative;z-index:1}
+.hw-s:not(:last-child)::after{content:'';position:absolute;left:23px;top:60px;bottom:-52px;width:1px;background:var(--s200)}
+.hw-c h2{font-size:clamp(1.4rem,2.5vw,1.8rem);color:var(--b5);font-weight:800;margin-bottom:16px}
+.hw-c>p{color:var(--s600);line-height:1.65;margin-bottom:24px}
+.hw-box{background:var(--s50);border-radius:8px;padding:24px;border:1px solid var(--s100)}
+.hw-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--s400);margin-bottom:12px}
+.hw-box li{display:flex;align-items:flex-start;gap:12px;color:var(--s600);font-size:15px;margin-bottom:8px}
+.hw-box li:last-child{margin-bottom:0}
+.hw-box li svg{flex-shrink:0;width:20px;height:20px;color:var(--a5);margin-top:2px}
+
+/* CONTACT */
+.ct-grid{display:grid;grid-template-columns:2fr 3fr;gap:48px}
+.ct-info h2{font-size:1.5rem;color:var(--b5);font-weight:800;margin-bottom:24px}
+.ct-info>p{color:var(--s500);line-height:1.65;margin-bottom:32px}
+.ct-item{margin-bottom:24px}
+.ct-item h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--s400);margin-bottom:8px}
+.ct-item a{font-size:20px;font-weight:600;color:var(--b5);transition:color .2s}
+.ct-item a:hover{color:var(--a5)}
+.ct-item p{color:var(--s500);font-size:15px}
+.ct-exp{margin-top:40px;padding:24px;background:var(--s50);border-radius:8px;border:1px solid var(--s100)}
+.ct-exp h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--s400);margin-bottom:8px}
+.ct-exp p{color:var(--s500);font-size:14px;line-height:1.65}
+.ct-form{background:var(--s50);border-radius:8px;padding:40px;border:1px solid var(--s100)}
+.ct-form h2{font-size:1.5rem;color:var(--b5);font-weight:800;margin-bottom:8px}
+.ct-form>p{color:var(--s500);font-size:14px;margin-bottom:32px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fi{margin-bottom:0}
+.fi label{display:block;font-size:14px;font-weight:600;color:var(--s700);margin-bottom:6px}
+.fi input,.fi select,.fi textarea{width:100%;padding:12px 16px;border-radius:4px;border:1px solid var(--s200);background:#fff;color:var(--s800);font-size:14px;font-family:'Barlow',sans-serif;transition:border-color .2s,box-shadow .2s}
+.fi input:focus,.fi select:focus,.fi textarea:focus{outline:none;border-color:var(--a5);box-shadow:0 0 0 3px rgba(42,125,225,.15)}
+.fi textarea{resize:none}
+.fw{grid-column:1/-1}
+
+/* FOOTER */
+.ftr{background:var(--b8);color:var(--s400);padding:64px 0 0}
+.ftr-g{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.ftr h3{color:#fff;font-size:1.1rem;margin-bottom:16px}
+.ftr p{font-size:14px;line-height:1.65}
+.ftr ul{list-style:none}
+.ftr li{margin-bottom:8px}
+.ftr li a{font-size:14px;color:var(--s400);transition:color .2s}
+.ftr li a:hover{color:#fff}
+.ftr-ct a{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--s400);transition:color .2s;margin-bottom:12px}
+.ftr-ct a:hover{color:#fff}
+.ftr-ct a svg{flex-shrink:0;width:16px;height:16px}
+.ftr-b{margin-top:48px;padding:24px 0;border-top:1px solid var(--b7);text-align:center;font-size:12px;color:var(--s500)}
+
+/* TABS */
+.page{display:none}.page.active{display:block}
+.link{color:var(--a5);font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;display:inline-flex;align-items:center;gap:8px;margin-top:40px;transition:color .2s}
+.link:hover{color:var(--b5)}
+.link svg{width:16px;height:16px}
+
+/* ANIMATIONS */
+.fu{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.fu.vis{opacity:1;transform:translateY(0)}
+
+@media(max-width:768px){
+  .nav{display:none}
+  .ct-grid{grid-template-columns:1fr}
+  .fg{grid-template-columns:1fr}
+  .ftr-g{grid-template-columns:1fr}
+  .tg{grid-template-columns:1fr;gap:24px}
+  .lt{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr">
+<div class="ctr">
+<div class="hdr-in">
+<a href="#" class="logo-a" onclick="showPage('home');return false">
+  <img src="./images/CISLOGO.jpg" alt="Core Industrial Solutions">
+<div class="lt"><span class="l1">Core Industrial</span><span class="l2">Solutions</span></div>
+</a>
+<nav class="nav">
+<a href="#" onclick="showPage('home');return false">Home</a>
+<a href="#" onclick="showPage('about');return false">About</a>
+<a href="#" onclick="showPage('services');return false">Services</a>
+<a href="#" onclick="showPage('hiw');return false">How It Works</a>
+<a href="#" class="btn-n" onclick="showPage('contact');return false">Request Service</a>
+</nav>
+</div>
+</div>
+</header>
+
+<!-- HOME PAGE -->
+<div id="page-home" class="page active">
+<section class="hero">
+<div class="hero-g"></div>
+<div class="ctr">
+<div class="hero-c">
+  <img src="./images/CISLOGO.jpg" alt="Core Industrial Solutions">
+<h1>Industrial HVAC Equipment Selection You Can Trust</h1>
+<p class="sub">With over 25 years of industry experience, Core Industrial Solutions helps industrial and petrochemical facilities select the right Class 1 Division 2 (C1D2) and general purpose HVAC equipment the first time.</p>
+<div class="hero-ctas">
+<a href="#" class="btn bp" onclick="showPage('contact');return false">Request Service</a>
+<a href="tel:2257156438" class="btn bo">Call (225) 715-6438</a>
+</div>
+<p class="hero-rep">Authorized Representative of Shield Air Solutions and VTS Group</p>
+</div>
+</div>
+<div class="hero-line"></div>
+</section>
+
+<section class="sec sec-g">
+<div class="ctr">
+<div class="sh fu"><span class="ey">What We Do</span><h2>The Right Equipment, The First Time</h2><p>Core Industrial Solutions works directly with owners, engineering firms, and contractors to make sure HVAC equipment fits the environment, meets compliance requirements, and performs reliably for the long term.</p></div>
+<div class="cg">
+<div class="cd fu">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+<h3>Site Walkthroughs and Requirements Gathering</h3>
+<p>We walk your facility, understand your constraints, and identify exactly what your environment demands before recommending anything.</p>
+</div>
+<div class="cd fu">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+<h3>Equipment Selection Support</h3>
+<p>Practical recommendations based on your actual use case, including Class 1 Division 2 (C1D2) compliance, sizing, and configuration for industrial environments.</p>
+</div>
+<div class="cd fu">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+<h3>Shield Air and VTS Group Equipment</h3>
+<p>As an authorized representative of Shield Air Solutions and VTS Group, we tailor HVAC equipment to your actual needs, ensuring the right equipment, not just available equipment.</p>
+</div>
+<div class="cd fu">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+<h3>Project Support and Coordination</h3>
+<p>Supporting owners, engineering firms, and contractors through the selection process, helping reduce rework by ensuring equipment fits the environment from day one.</p>
+</div>
+</div>
+<div style="text-align:center;margin-top:40px"><a href="#" class="link" onclick="showPage('services');return false">View All Services <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a></div>
+</div>
+</section>
+
+<section class="sec">
+<div class="ctr">
+<div class="sh fu"><span class="ey">How It Works</span><h2>A Straightforward Process</h2><p>From initial walkthrough to final quote, we keep it simple and focused on getting the right equipment selected for your facility.</p></div>
+<div class="sg">
+<div class="st fu"><div class="sn">01</div><h3>Walkthrough</h3><p>We visit your facility and assess the environment, constraints, and requirements firsthand.</p></div>
+<div class="st fu"><div class="sn">02</div><h3>Requirements</h3><p>We define exactly what your project needs, including C1D2 compliance, sizing, and site-specific conditions.</p></div>
+<div class="st fu"><div class="sn">03</div><h3>Recommend Equipment</h3><p>We present practical, fit-for-purpose equipment options from Shield Air Solutions and VTS Group.</p></div>
+<div class="st fu"><div class="sn">04</div><h3>Quote and Support</h3><p>You receive a clear quote and ongoing support through procurement and installation coordination.</p></div>
+</div>
+</div>
+</section>
+
+<section class="tb">
+<div class="ctr">
+<div class="tg">
+<div class="fu"><div class="tn">25+</div><div class="tl">Years of Experience</div></div>
+<div class="fu"><div class="tn">C1D2, General Purpose Equipment, & Custom Air Handling Units</div><div class="tl">Equipment Specialists</div></div>
+<div class="fu"><div class="tn">LA</div><div class="tl">Louisiana Based, Broader Reach</div></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="ctr">
+<h2>Ready to Get Started?</h2>
+<p>Call, email, or request service. We respond quickly and work on your timeline.</p>
+<div class="cta-b">
+<a href="tel:2257156438" class="btn bw">Call (225) 715-6438</a>
+<a href="mailto:Tab@core-is.net" class="btn bow">Email Tab@core-is.net</a>
+<a href="#" class="btn ba" onclick="showPage('contact');return false">Request Service</a>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="page-about" class="page">
+<section class="ph"><div class="ctr"><span class="ey">About Us</span><h1>Built on Experience, Not Sales Pitches</h1><p>Core Industrial Solutions was built on the understanding that industrial and petrochemical facilities need a knowledgeable partner who listens first and recommends second.</p></div></section>
+
+<section class="sec">
+<div class="ctr-sm bio">
+<span class="ey" style="display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--a5);margin-bottom:12px">Founder</span>
+<h2 style="font-size:2rem;color:var(--b5);font-weight:800;margin-bottom:4px">Tab Core</h2>
+<div class="title-line">Authorized Sales Representative</div>
+<p>Tab Core brings over 25 years of hands-on experience in the industrial HVAC industry. Throughout his career, he has worked alongside owners, engineering firms, and contractors across Louisiana and the Gulf region, helping facilities select equipment that fits their actual operating conditions.</p>
+<p>As an authorized representative of Shield Air Solutions and VTS Group, Tab specializes in Class 1 Division 2 (C1D2) rated equipment, general purpose equipment, and custom air handling units. His focus is practical, ensuring that the equipment selected meets compliance requirements, withstands the environment, and performs reliably over its full service life.</p>
+<p>Tab founded Core Industrial Solutions because he saw too many projects where equipment was selected based on availability instead of fit. Facilities would end up with units that did not match the environment, leading to rework, safety concerns, and unnecessary cost. He believed there was a better way to serve the industry.</p>
+<p>They deserve someone who will walk their facility, understand their constraints, and design a solution that actually fits, the first time.</p>
+<p>That belief drives every project Core takes on. Whether it is a new installation, a replacement, or an upgrade, Tab brings the same approach: listen, assess, recommend the right equipment, and support the process from start to finish.</p>
+</div>
+</section>
+
+<section class="sec sec-g">
+<div class="ctr">
+<div class="sh"><span class="ey">Our Approach</span><h2>What Sets Us Apart</h2><p>We are not a catalog. We are a knowledgeable partner that helps you choose the right Industrial HVAC equipment based on real-world conditions.</p></div>
+<div class="cg" style="grid-template-columns:repeat(3,1fr)">
+<div class="cd"><h3>Experience First</h3><p>25+ years working in industrial and petrochemical environments. We understand the conditions your equipment needs to withstand.</p></div>
+<div class="cd"><h3>Fit-for-Purpose Selection</h3><p>Every recommendation is based on your facility, your constraints, and your compliance requirements, including Class 1 Division 2 (C1D2) specifications.</p></div>
+<div class="cd"><h3>Local Presence, Broader Capability</h3><p>Based in Louisiana with a strong regional presence, and available to support projects beyond the state when needed.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="ctr-sm" style="text-align:center">
+<div class="sh"><span class="ey">Authorized Representative</span><h2>Shield Air Solutions and VTS Group</h2><p>Core Industrial Solutions is an authorized representative of both Shield Air Solutions and VTS Group, giving our customers access to a full range of Industrial HVAC equipment.</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;text-align:left">
+<div class="cd"><h3>Shield Air Solutions</h3><p>Manufacturer of Class 1 Division 2 (C1D2) rated equipment and general purpose Industrial HVAC units. Purpose-built for hazardous and demanding industrial environments.</p></div>
+<div class="cd"><h3>VTS Group</h3><p>Manufacturer of custom air handling units designed for specific facility requirements. Configurable to meet the unique demands of industrial and petrochemical applications.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta"><div class="ctr"><h2>Let's Talk About Your Project</h2><p>Whether you need C1D2 equipment, custom air handling units, or help selecting the right Industrial HVAC solution, we are ready to help.</p><div class="cta-b"><a href="tel:2257156438" class="btn bw">Call (225) 715-6438</a><a href="mailto:Tab@core-is.net" class="btn bow">Email Tab@core-is.net</a><a href="#" class="btn ba" onclick="showPage('contact');return false">Request Service</a></div></div></section>
+</div>
+
+<!-- SERVICES PAGE -->
+<div id="page-services" class="page">
+<section class="ph"><div class="ctr"><span class="ey">Services</span><h1>Industrial HVAC Services Built on Experience</h1><p>From facility walkthroughs to equipment selection and project coordination, we help you get the right Class 1 Division 2 (C1D2) and general purpose Industrial HVAC equipment the first time.</p></div></section>
+
+<section class="sec">
+<div class="ctr-sm">
+
+<div class="sb"><div class="sb-h"><span class="sb-n">01</span><h2>Site Walkthroughs and Requirements Gathering</h2></div>
+<div class="pao">
+<div class="pa pr"><h3>The Problem</h3><p>Many equipment problems start before a purchase order is written. Without a clear understanding of the facility environment, constraints, and installation needs, the wrong equipment gets specified.</p></div>
+<div class="pa ap"><h3>Our Approach</h3><p>We perform hands-on facility walkthroughs to assess the actual site conditions. This includes evaluating the operating environment, space constraints, access for installation and maintenance, compliance zones including Class 1 Division 2 (C1D2) areas, and any unique conditions that affect equipment performance.</p></div>
+<div class="pa ou"><h3>The Outcome</h3><p>You get a clear picture of what your facility actually needs before any equipment is selected, preventing costly mistakes and rework downstream.</p></div>
+</div></div>
+
+<div class="sb"><div class="sb-h"><span class="sb-n">02</span><h2>Equipment Selection Support</h2></div>
+<div class="pao">
+<div class="pa pr"><h3>The Problem</h3><p>Selecting Industrial HVAC equipment based on catalogs or availability alone often leads to units that do not match the application. Undersized, oversized, or non-compliant equipment creates safety issues, wasted budget, and downtime.</p></div>
+<div class="pa ap"><h3>Our Approach</h3><p>We provide practical, experience-based recommendations that match equipment to your actual use case. This includes verifying Class 1 Division 2 (C1D2) requirements, sizing for real-world conditions, and aligning unit type and configuration with your facility and project goals.</p></div>
+<div class="pa ou"><h3>The Outcome</h3><p>You receive a recommendation you can trust, equipment that fits the environment, meets compliance needs, and is built for the long term.</p></div>
+</div></div>
+
+<div class="sb"><div class="sb-h"><span class="sb-n">03</span><h2>Shield Air Solutions and VTS Group Equipment</h2></div>
+<div class="pao">
+<div class="pa pr"><h3>The Problem</h3><p>Industrial and petrochemical facilities often need specialized equipment that off-the-shelf options cannot provide, particularly in hazardous environments requiring C1D2 rated units or custom configurations.</p></div>
+<div class="pa ap"><h3>Our Approach</h3><p>As an authorized representative of Shield Air Solutions and VTS Group, we offer direct access to a full range of Industrial HVAC equipment. Shield Air Solutions manufactures Class 1 Division 2 (C1D2) rated equipment and general purpose units built for demanding industrial environments. VTS Group manufactures custom air handling units that can be configured to meet specific facility requirements.</p></div>
+<div class="pa ou"><h3>The Outcome</h3><p>You get access to purpose-built equipment from manufacturers who specialize in industrial applications, supported by a local representative who understands your facility.</p></div>
+</div></div>
+
+<div class="sb"><div class="sb-h"><span class="sb-n">04</span><h2>Project Support and Coordination</h2></div>
+<div class="pao">
+<div class="pa pr"><h3>The Problem</h3><p>Equipment selection does not happen in isolation. Owners, engineering firms, and contractors all need to be aligned on what is being specified and why. Miscommunication leads to rework, delays, and equipment that does not fit.</p></div>
+<div class="pa ap"><h3>Our Approach</h3><p>We support the full selection process by working alongside all parties. From initial requirements through quoting and procurement, we help ensure that everyone is working from the same information and that the equipment selected fits the project scope.</p></div>
+<div class="pa ou"><h3>The Outcome</h3><p>Fewer surprises, less rework, and equipment that fits the environment and requirements from day one.</p></div>
+</div></div>
+
+</div>
+</section>
+
+<section class="cta"><div class="ctr"><h2>Need Help Selecting the Right Equipment?</h2><p>Call us directly, send an email, or submit a request. We will get back to you quickly.</p><div class="cta-b"><a href="tel:2257156438" class="btn bw">Call (225) 715-6438</a><a href="mailto:Tab@core-is.net" class="btn bow">Email Tab@core-is.net</a><a href="#" class="btn ba" onclick="showPage('contact');return false">Request Service</a></div></div></section>
+</div>
+
+<!-- HOW IT WORKS PAGE -->
+<div id="page-hiw" class="page">
+<section class="ph"><div class="ctr"><span class="ey">How It Works</span><h1>A Straightforward Process</h1><p>From initial facility walkthrough to final quote and support, we keep the process focused, practical, and transparent.</p></div></section>
+
+<section class="sec">
+<div class="ctr-sm">
+
+<div class="hw-s">
+<div class="hw-n">01</div>
+<div class="hw-c"><h2>Walkthrough</h2><p>Everything starts with a visit to your facility. We walk the site to understand the environment, assess existing conditions, identify constraints, and get a clear picture of what the project actually requires. This includes evaluating Class 1 Division 2 (C1D2) zones, access points, space limitations, and any conditions that will affect equipment selection.</p>
+<div class="hw-box"><h3>What This Includes</h3><ul>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>On-site facility evaluation</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Assessment of hazardous area classifications including C1D2</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Documentation of physical and environmental constraints</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Coordination with your team on access and scheduling</li>
+</ul></div></div>
+</div>
+
+<div class="hw-s">
+<div class="hw-n">02</div>
+<div class="hw-c"><h2>Requirements</h2><p>Based on the walkthrough, we define the full set of equipment requirements. This means going beyond general specifications to capture the real-world factors that determine whether equipment will perform reliably in your environment.</p>
+<div class="hw-box"><h3>What This Includes</h3><ul>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Equipment sizing and capacity requirements</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Compliance and classification needs, including Class 1 Division 2 (C1D2)</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Environmental and operating condition specifications</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Coordination with owners, engineering firms, and contractors</li>
+</ul></div></div>
+</div>
+
+<div class="hw-s">
+<div class="hw-n">03</div>
+<div class="hw-c"><h2>Recommend Equipment</h2><p>We present practical, fit-for-purpose equipment options from Shield Air Solutions and VTS Group. Each recommendation is grounded in your actual facility conditions, not theoretical specs. We explain why a particular unit, configuration, or specification makes sense for your project.</p>
+<div class="hw-box"><h3>What This Includes</h3><ul>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Shield Air Solutions C1D2 and general purpose equipment options</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>VTS Group custom air handling unit configurations</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Clear explanation of trade-offs and fit</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Equipment matched to compliance, environment, and budget</li>
+</ul></div></div>
+</div>
+
+<div class="hw-s">
+<div class="hw-n">04</div>
+<div class="hw-c"><h2>Quote and Support</h2><p>Once you have selected the right equipment, we deliver a clear quote and continue to support the process through procurement and coordination. Our involvement does not end with a recommendation. We stay engaged to help ensure the equipment is ordered correctly and arrives ready for installation.</p>
+<div class="hw-box"><h3>What This Includes</h3><ul>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Transparent quoting with no hidden extras</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Procurement coordination and lead time management</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Ongoing support through installation planning</li>
+<li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Single point of contact throughout the process</li>
+</ul></div></div>
+</div>
+
+</div>
+</section>
+
+<section class="cta"><div class="ctr"><h2>Let's Start With a Walkthrough</h2><p>The best equipment selection starts with understanding your facility. Contact us to schedule a site visit.</p><div class="cta-b"><a href="tel:2257156438" class="btn bw">Call (225) 715-6438</a><a href="mailto:Tab@core-is.net" class="btn bow">Email Tab@core-is.net</a><a href="#" class="btn ba" onclick="showPage('contact');return false">Request Service</a></div></div></section>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="page-contact" class="page">
+<section class="ph"><div class="ctr"><span class="ey">Contact</span><h1>Get in Touch</h1><p>Whether you have a project in mind or just want to talk through your options, we are here to help. Call, email, or submit a request below.</p></div></section>
+
+<section class="sec">
+<div class="ctr">
+<div class="ct-grid">
+<div class="ct-info">
+<h2>Direct Contact</h2>
+<p>The fastest way to get started is to call or email directly. You will be speaking with Tab Core, an authorized sales representative with over 25 years of Industrial HVAC experience.</p>
+<div class="ct-item"><h3>Phone</h3><a href="tel:2257156438">(225) 715-6438</a></div>
+<div class="ct-item"><h3>Email</h3><a href="mailto:Tab@core-is.net">Tab@core-is.net</a></div>
+<div class="ct-item"><h3>Location</h3><p>Louisiana-based. Available for projects throughout the Gulf region and beyond.</p></div>
+<div class="ct-exp"><h3>What to Expect</h3><p>When you reach out, you will work directly with Tab Core, Authorized Sales Representative. No call centers, no sales teams, just a direct conversation with someone who has 25+ years of experience in Industrial HVAC equipment selection, including Class 1 Division 2 (C1D2) applications.</p></div>
+</div>
+<div class="ct-form">
+<h2>Request Service</h2>
+<p>Fill out the form below and we will follow up promptly.</p>
+<div class="fg">
+<div class="fi"><label>Name *</label><input type="text" placeholder="Your name"></div>
+<div class="fi"><label>Company</label><input type="text" placeholder="Company name"></div>
+<div class="fi"><label>Email *</label><input type="email" placeholder="you@company.com"></div>
+<div class="fi"><label>Phone</label><input type="tel" placeholder="(555) 555-5555"></div>
+<div class="fi fw"><label>I am a...</label><select><option value="">Select one</option><option>Owner</option><option>Engineering Firm</option><option>Contractor</option><option>Other</option></select></div>
+<div class="fi fw"><label>How can we help? *</label><textarea rows="5" placeholder="Describe your project or what you need help with..."></textarea></div>
+<div class="fw"><button class="btn bp" style="width:100%;padding:16px;cursor:pointer" onclick="this.textContent='Request Received. Thank you!';this.style.background='#16a34a'">Submit Request</button></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer class="ftr">
+<div class="ctr">
+<div class="ftr-g">
+<div>
+<h3>Core Industrial Solutions</h3>
+<p>Helping industrial and petrochemical facilities select the right Industrial HVAC equipment the first time. Authorized Representative of Shield Air Solutions and VTS Group.</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#" onclick="showPage('home');return false">Home</a></li>
+<li><a href="#" onclick="showPage('about');return false">About</a></li>
+<li><a href="#" onclick="showPage('services');return false">Services</a></li>
+<li><a href="#" onclick="showPage('hiw');return false">How It Works</a></li>
+<li><a href="#" onclick="showPage('contact');return false">Contact</a></li>
+</ul>
+</div>
+<div class="ftr-ct">
+<h3>Contact</h3>
+<a href="tel:2257156438"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>(225) 715-6438</a>
+<a href="mailto:Tab@core-is.net"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>Tab@core-is.net</a>
+<p style="margin-top:16px;font-size:13px;color:var(--s500)">Based in Louisiana. Available for projects throughout the Gulf region.</p>
+</div>
+</div>
+<div class="ftr-b">&copy; 2026 Core Industrial Solutions. All rights reserved.</div>
+</div>
+</footer>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('page-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+  setTimeout(function() {
+    document.querySelectorAll('.fu').forEach(function(el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) el.classList.add('vis');
+    });
+  }, 100);
+}
+
+var obs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('vis'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fu').forEach(function(el) { obs.observe(el); });
+</script>
+</body>
+</html>
